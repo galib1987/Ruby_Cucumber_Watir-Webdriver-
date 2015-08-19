@@ -1,6 +1,6 @@
 Feature: open website and login
 
-  #@tag
+  @ScenarioID_001
   Scenario: Login with hardcoded values
     Given I open automationpractice website
     When  I click Sign in
