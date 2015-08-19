@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns ="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html;charset=utf-8"/><title>Cucumber</title><style type="text/css">/* cucumber.css is generated from cucumber.sass */
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns ="http://www.w3.org/1999/xhtml"><head><meta content="text/html;charset=utf-8" http-equiv="Content-Type"/><title>Cucumber</title><style type="text/css">/* cucumber.css is generated from cucumber.sass */
 /* Regenerate with rake sass */
 body {
   font-size: 0px;
@@ -197,7 +197,6 @@ body {
   background: #e0ffff;
   color: #001111;
   margin-left: 10px;
-  white-space: pre;
 }
 .cucumber #summary, td #summary, th #summary {
   margin: 0px;
@@ -438,46 +437,3 @@ d,e);d={top:b.top-e.top+j,left:b.left-e.left+i};"using"in b?b.using.call(a,d):f.
 f.top,left:d.left-f.left}},offsetParent:function(){return this.map(function(){for(var a=this.offsetParent||s.body;a&&!/^body|html$/i.test(a.nodeName)&&c.css(a,"position")==="static";)a=a.offsetParent;return a})}});c.each(["Left","Top"],function(a,b){var d="scroll"+b;c.fn[d]=function(f){var e=this[0],j;if(!e)return null;if(f!==w)return this.each(function(){if(j=wa(this))j.scrollTo(!a?f:c(j).scrollLeft(),a?f:c(j).scrollTop());else this[d]=f});else return(j=wa(e))?"pageXOffset"in j?j[a?"pageYOffset":
 "pageXOffset"]:c.support.boxModel&&j.document.documentElement[d]||j.document.body[d]:e[d]}});c.each(["Height","Width"],function(a,b){var d=b.toLowerCase();c.fn["inner"+b]=function(){return this[0]?c.css(this[0],d,false,"padding"):null};c.fn["outer"+b]=function(f){return this[0]?c.css(this[0],d,false,f?"margin":"border"):null};c.fn[d]=function(f){var e=this[0];if(!e)return f==null?null:this;if(c.isFunction(f))return this.each(function(j){var i=c(this);i[d](f.call(this,j,i[d]()))});return"scrollTo"in
 e&&e.document?e.document.compatMode==="CSS1Compat"&&e.document.documentElement["client"+b]||e.document.body["client"+b]:e.nodeType===9?Math.max(e.documentElement["client"+b],e.body["scroll"+b],e.documentElement["scroll"+b],e.body["offset"+b],e.documentElement["offset"+b]):f===w?c.css(e,d):this.css(d,typeof f==="string"?f:f+"px")}});A.jQuery=A.$=c})(window);
-
-  SCENARIOS = "h3[id^='scenario_'],h3[id^=background_]";
-
-  $(document).ready(function() {
-    $(SCENARIOS).css('cursor', 'pointer');
-    $(SCENARIOS).click(function() {
-      $(this).siblings().toggle(250);
-    });
-
-    $("#collapser").css('cursor', 'pointer');
-    $("#collapser").click(function() {
-      $(SCENARIOS).siblings().hide();
-    });
-
-    $("#expander").css('cursor', 'pointer');
-    $("#expander").click(function() {
-      $(SCENARIOS).siblings().show();
-    });
-  })
-
-  function moveProgressBar(percentDone) {
-    $("cucumber-header").css('width', percentDone +"%");
-  }
-  function makeRed(element_id) {
-    $('#'+element_id).css('background', '#C40D0D');
-    $('#'+element_id).css('color', '#FFFFFF');
-  }
-  function makeYellow(element_id) {
-    $('#'+element_id).css('background', '#FAF834');
-    $('#'+element_id).css('color', '#000000');
-  }
-
-</script></head><body><!-- Step count 0--><div class="cucumber"><div id="cucumber-header"><div id="label"><h1>Cucumber Features</h1></div><div id="summary"><p id="totals"></p><p id="duration"></p><div id="expand-collapse"><p id="expander">Expand All</p><p id="collapser">Collapse All</p></div></div></div><div class="feature"><h2><span class="val">Feature: This is a sample feature</span></h2><p class="narrative"></p><div class='scenario'><span class="scenario_file">features/Login.feature:4</span><h3 id="scenario_1"><span class="keyword">Scenario:</span> <span class="val">Positive login</span></h3><ol><script>makeYellow('cucumber-header');makeYellow('scenario_1');</script><li id='' class='step undefined'><div class="step_name"><span class="keyword">Given </span><span class="step val">user visit automationpractice.com</span></div><div class="step_file"><span>features/Login.feature:5</span></div><pre>Given(/^user visit automationpractice\.com$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end</pre></li> <script type="text/javascript">moveProgressBar('100.0');</script><script>makeYellow('cucumber-header');makeYellow('scenario_1');</script><li id='' class='step undefined'><div class="step_name"><span class="keyword">And </span><span class="step val">user click signin</span></div><div class="step_file"><span>features/Login.feature:6</span></div><pre>Given(/^user click signin$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end</pre></li> <script type="text/javascript">moveProgressBar('100.0');</script><script>makeYellow('cucumber-header');makeYellow('scenario_1');</script><li id='' class='step undefined'><div class="step_name"><span class="keyword">When </span><span class="step val">User put valid email and Password</span></div><div class="step_file"><span>features/Login.feature:7</span></div><pre>When(/^User put valid email and Password$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end</pre></li> <script type="text/javascript">moveProgressBar('100.0');</script><script>makeYellow('cucumber-header');makeYellow('scenario_1');</script><li id='' class='step undefined'><div class="step_name"><span class="keyword">And </span><span class="step val">User Click Signin</span></div><div class="step_file"><span>features/Login.feature:8</span></div><pre>When(/^User Click Signin$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end</pre></li> <script type="text/javascript">moveProgressBar('100.0');</script><script>makeYellow('cucumber-header');makeYellow('scenario_1');</script><li id='' class='step undefined'><div class="step_name"><span class="keyword">Then </span><span class="step val">I see My Account</span></div><div class="step_file"><span>features/Login.feature:9</span></div><pre>Then(/^I see My Account$/) do
-  pending # Write code here that turns the phrase above into concrete actions
-end</pre></li> <script type="text/javascript">moveProgressBar('100.0');</script></ol></div></div><div class="feature"><h2><span class="val">Feature: this is to demo the cucumber framework</span></h2><p class="narrative"></p><div class='scenario'><span class="tag">@ScenarioID_001</span> <span class="tag">@sprint1</span><span class="scenario_file">features/Sample.feature:6</span><h3 id="scenario_2"><span class="keyword">Scenario:</span> <span class="val">Login with hardcoded values</span></h3><ol><li id='' class='step passed'><div class="step_name"><span class="keyword">Given </span><span class="step val">I open automationpractice website</span></div><div class="step_file"><span>features/step_definitions/example.rb:3</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">When </span><span class="step val">I click Sign in</span></div><div class="step_file"><span>features/step_definitions/example.rb:9</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">And </span><span class="step val">I sign in with &quot;<span class="param">abc@xyz.com</span>&quot; and &quot;<span class="param">Test@123</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/example.rb:14</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">And </span><span class="step val">I click Sign In</span></div><div class="step_file"><span>features/step_definitions/example.rb:61</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">Then </span><span class="step val">I see text &quot;<span class="param">MY ACCOUNT</span>&quot;</span></div><div class="step_file"><span>features/step_definitions/example.rb:55</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script></ol></div><div class='scenario'><pre class="comment">##########################################################################<br/></pre><span class="tag">@ScenarioID_002</span> <span class="tag">@Sprint1</span><span class="scenario_file">features/Sample.feature:17</span><h3 id="scenario_3"><span class="keyword">Scenario:</span> <span class="val">Login using page objects</span></h3><ol><li id='' class='step passed'><div class="step_name"><span class="keyword">Given </span><span class="step val">I open automationpractice website</span></div><div class="step_file"><span>features/step_definitions/example.rb:3</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">When </span><span class="step val">I click sign in page-object</span></div><div class="step_file"><span>features/step_definitions/example.rb:19</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step passed'><div class="step_name"><span class="keyword">Then </span><span class="step val">I sign in with &quot;<span class="param">abc@xyz.com</span>&quot; and &quot;<span class="param">Test@123</span>&quot; page-object</span></div><div class="step_file"><span>features/step_definitions/example.rb:25</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script></ol></div><div class='scenario outline'><pre class="comment">###########################################################################<br/></pre><span class="tag">@ScenarioID_003</span> <span class="tag">@Sprint2</span><span class="scenario_file">features/Sample.feature:26</span><h3 id="scenario_4"><span class="keyword">Scenario Outline:</span> <span class="val">Customer Checks out with Different Type of Credit Card</span></h3><ol><li id='' class='step skipped'><div class="step_name"><span class="keyword">Given </span><span class="step val">I visit practiceselenium website</span></div><div class="step_file"><span>features/Sample.feature:27</span></div></li> <script type="text/javascript">moveProgressBar('100.0');</script><li id='' class='step skipped'><div class="step_name"><span class="keyword"

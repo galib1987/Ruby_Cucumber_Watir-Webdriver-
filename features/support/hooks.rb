@@ -1,9 +1,9 @@
 Before do
 
-  browser = ENV['BROWSER']
-  @browser = Watir::Browser.new browser.to_sym
+  # browser = ENV['BROWSER']
+  # @browser = Watir::Browser.new browser.to_sym
 
-  #@browser = Watir::Browser.new :firefox
+  @browser = Watir::Browser.new :firefox
 
 end
 
