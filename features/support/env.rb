@@ -1,0 +1,8 @@
+require 'rspec'
+require 'rspec/expectations'
+require 'watir-webdriver'
+require './features/support/home_page'
+require 'yaml'
+require 'rake'
+require 'active_record'
+require 'sqlite3'

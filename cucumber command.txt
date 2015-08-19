@@ -1,0 +1,12 @@
+
+#to execute prodile
+
+cucumber features/facebook.feature --profile qa
+
+cucumber features/facebook.feature --profile dev
+
+
+#for parallel execution
+
+parallel_cucumber features
+
