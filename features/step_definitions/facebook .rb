@@ -4,9 +4,9 @@ Given(/^I execute test for faceboook$/) do
 
   @cnf = YAML::load(File.open('./features/support/sample.yml'))
 
-  @browser.goto ENV["SOURCE_URL"]
-
-  #@browser.goto "www.facebook.com"
+  #@browser.goto ENV["SOURCE_URL"]
+  sleep 2
+  @browser.goto"www.facebook.com"
   sleep 2
   @browser.text_field(:id => "u_0_b").set @cnf['User1']['firstname']
   @browser.text_field(id: "u_0_d").set @cnf['User1']['lastname']
@@ -34,6 +34,6 @@ Given(/^I execute test for faceboook$/) do
 
 end
 
-
+#dsfdsfds
 
 
