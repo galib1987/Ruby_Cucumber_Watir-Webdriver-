@@ -3,7 +3,7 @@ Before do
   # browser = ENV['BROWSER']
   # @browser = Watir::Browser.new browser.to_sym
 
-  @browser = Watir::Browser.new :firefox
+  @browser = Watir::Browser.new :ie
 
 end
 
@@ -13,7 +13,7 @@ After do |scenario|
     @browser.screenshot.save (scenario.name+".png")
     embed(scenario.name+".png", 'image/png')
   end
-  @browser.quit
+ # @browser.quit
 end
 
 

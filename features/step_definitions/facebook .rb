@@ -2,20 +2,20 @@
 
 Given(/^I execute test for faceboook$/) do
 
-  @cnf = YAML::load(File.open('./features/support/sample.yml'))
+  @yml = YAML::load(File.open('./features/support/sample.yml'))
 
   #@browser.goto ENV["SOURCE_URL"]
   sleep 2
   @browser.goto"www.facebook.com"
   sleep 2
-  @browser.text_field(:id => "u_0_b").set @cnf['User1']['firstname']
-  @browser.text_field(id: "u_0_d").set @cnf['User1']['lastname']
-  @browser.text_field(id: "u_0_f").set @cnf['User1']['email1']
-  @browser.text_field(id: "u_0_i").set @cnf['User1']['email2']
-  @browser.text_field(id: "u_0_k").set @cnf['User1']['password']
-  @browser.select_list(id: "month").select @cnf['User1']['month']
-  @browser.select_list(id: "day").select @cnf['User1']['date']
-  @browser.select_list(id: "year").select @cnf['User1']['year']
+  @browser.text_field(:id => "u_0_b").set @yml['User1']['firstname']
+  @browser.text_field(id: "u_0_d").set @yml['User1']['lastname']
+  @browser.text_field(id: "u_0_f").set @yml['User1']['email1']
+  @browser.text_field(id: "u_0_i").set @yml['User1']['email2']
+  @browser.text_field(id: "u_0_k").set @yml['User1']['password']
+  @browser.select_list(id: "month").select @yml['User1']['month']
+  @browser.select_list(id: "day").select @yml['User1']['date']
+  @browser.select_list(id: "year").select @yml['User1']['year']
   @browser.radio(id: "u_0_n").click
   @browser.button(id: "u_0_s").click
 
@@ -34,6 +34,6 @@ Given(/^I execute test for faceboook$/) do
 
 end
 
-#dsfdsfds
+
 
 

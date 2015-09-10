@@ -4,8 +4,6 @@ Given(/^I open automationpractice website$/) do
   @browser.goto "http://automationpractice.com/index.php"
 end
 
-
-
 When(/^I click Sign in$/) do
   sleep 2
   @browser.link(text: "Sign in").click
@@ -39,9 +37,6 @@ Then(/^I fill the contact us form$/) do
   @contact_us_page.email.set "abc@cyz.com"
   @contact_us_page.message.set "message"
 end
-
-
-
 
 When(/^I click contact us page object using page helper$/) do
   on(HomePageNew).contact_us.click

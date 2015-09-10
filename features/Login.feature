@@ -1,6 +1,6 @@
 Feature: This is a sample feature
 
-
+  @regression
   Scenario: Positive login
     Given user visit automationpractice.com
     And   user click signin
