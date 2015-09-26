@@ -61,15 +61,16 @@ Then(/^User successfully navigated to the destination page$/) do
    sleep 5
    text = @browser.div(text: "Accessiblity Statement").text
 
+  expect(text).to eql? "Accessibility Statement"
 
-  if text == "Accessibility Statement"
-    puts "test passed"
-    puts "Expected text is Accessibility Statement and the UI Text is: #{text} "
-
-  else
-    puts "test failed"
-    puts "UI Text: #{text}"
-    puts "Expected text is Accessibility Statement and the UI Text is: #{text} "
-  end
+  # if text == "Accessibility Statement"
+  #   puts "test passed"
+  #   puts "Expected text is Accessibility Statement and the UI Text is: #{text} "
+  #
+  # else
+  #   puts "test failed"
+  #   puts "UI Text: #{text}"
+  #   puts "Expected text is Accessibility Statement and the UI Text is: #{text} "
+  # end
 end
 
