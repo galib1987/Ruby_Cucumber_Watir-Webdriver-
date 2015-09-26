@@ -21,12 +21,12 @@ Feature: This feature will test the login functionality of USCIS Demo app
 
   Examples:
 
-    | User_ID       | Password |
+    | User_ID       | Password  |
 
-    | 234823832dcdc | password |
-    | user1         | sjcsajc  |
-    | shcashcsac    | ascasc   |
-    |               |          |
+    | 234823832dcdc | password  |
+    | user1         | sjcsajc   |
+    | dbdsbcdsc     | jscjsacja |
+
 
 
 

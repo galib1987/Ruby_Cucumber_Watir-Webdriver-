@@ -14,6 +14,6 @@
 #dev: --no-source --color --format pretty BROWSER=firefox --format html --out results<%=ENV['TEST_ENV_NUMBER']%>.html --format json --out results.json SOURCE_URL=www.facebook.com
 #
 
-default: --no-source --color --format pretty --format html --out results.html --format json --out results.json
+default: --no-source --color --format pretty --format html  --out results.html --format json --out results.json
 
 

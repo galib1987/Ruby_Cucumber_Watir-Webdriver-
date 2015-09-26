@@ -34,10 +34,10 @@ end
 
 When(/^User Enter a Valid User id as (.*)$/) do |user_id|
 
-  sleep 5
+  sleep 10
   @browser.link(text:"Menu").click
 
-  sleep 5
+  sleep 10
   @browser.link(text:"Sign In").click
 
   sleep 5
