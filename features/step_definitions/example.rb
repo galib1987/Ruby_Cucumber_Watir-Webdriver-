@@ -113,3 +113,8 @@ Then(/^I see "([^"]*)"$/) do |text|
   actual_text =  @browser.div(id:"wsb-element-00000000-0000-0000-0000-000450914921").text
   expect(actual_text).to eql text
 end
+
+
+And(/^I sign out$/) do
+  @browser.a(text:"Sign out").click
+end

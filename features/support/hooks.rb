@@ -13,12 +13,10 @@ After do |scenario|
     @browser.screenshot.save (scenario.name+".png")
     embed(scenario.name+".png", 'image/png')
   end
- # @browser.quit
+  @browser.quit
 end
 
 
-#
-# #
-# After do
-#   @browser.quit
-# end
+After do
+  @browser.quit
+end
