@@ -39,6 +39,4 @@ Then(/^User Varify the total number of link at home page$/) do
     puts "test pass"
     puts "Total Number of Link is: #{total_link}"
   end
-    puts "test failed"
-    puts "Total Number of Link is: #{total_link}"
 end
