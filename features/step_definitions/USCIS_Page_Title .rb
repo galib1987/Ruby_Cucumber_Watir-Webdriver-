@@ -1,8 +1,6 @@
 Given(/^User Visit USCIS home page$/) do
-  @browser.goto "http://127.0.0.1:3000/"
+  @browser.goto "http://192.168.8.105:3000/"
 end
-
-
 
 
 Then(/^User Varify the Page Title$/) do
@@ -16,10 +14,10 @@ Then(/^User Varify the Page Title$/) do
 end
 
 
-
-
 Then(/^User Varify the USCIS logo$/) do
   if @browser.img(id:"small-uscis-logo").present?
+
+    puts "test passed"
     puts "Logo is here"
     puts @browser.img(id:"small-uscis-logo").text
     puts @browser.img(id:"small-uscis-logo").html
@@ -32,6 +30,7 @@ Then(/^User Varify the total number$/) do
   puts @browser.links.count
 end
 
+
 Then(/^User Varify the total number of link at home page$/) do
   total_link = @browser.links.count
 
@@ -40,3 +39,37 @@ Then(/^User Varify the total number of link at home page$/) do
     puts "Total Number of Link is: #{total_link}"
   end
 end
+
+Then(/^User Varify the total number of buttons at home page$/) do
+
+  total_button = @browser.buttons.count
+
+  if total_button == "0"
+    puts "test pass"
+    puts "Total Number of button is: #{total_link}"
+  else
+    puts "test failed"
+  end
+end
+
+When(/^User clicks on Terms & Accessibility link at home page$/) do
+  @browser.link(text: "Terms & Accessibility").click 
+end
+
+Then(/^User successfully navigated to the destination page$/) do
+
+   sleep 5
+   text = @browser.div(text: "Accessiblity Statement").text
+
+
+  if text == "Accessibility Statement"
+    puts "test passed"
+    puts "Expected text is Accessibility Statement and the UI Text is: #{text} "
+
+  else
+    puts "test failed"
+    puts "UI Text: #{text}"
+    puts "Expected text is Accessibility Statement and the UI Text is: #{text} "
+  end
+end
+

@@ -9,6 +9,7 @@ Feature: This feature will test the login functionality of USCIS Demo app
     Then  User is able to successfully login to the applicaton
 
 
+
 ########################################################################################################
 
 
@@ -26,7 +27,6 @@ Feature: This feature will test the login functionality of USCIS Demo app
     | 234823832dcdc | password  |
     | user1         | sjcsajc   |
     | dbdsbcdsc     | jscjsacja |
-
 
 
 

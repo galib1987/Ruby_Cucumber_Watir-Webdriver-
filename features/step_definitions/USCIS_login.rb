@@ -1,8 +1,9 @@
 When(/^User Enter Valid User ID$/) do
-  sleep 5
+  sleep 10
   @browser.link(text:"Menu").click
-  sleep 5
+  sleep 10
   @browser.link(text:"Sign In").click
+
 
   @browser.text_field(id: "user_username").set "user5"
 
