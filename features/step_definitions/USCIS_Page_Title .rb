@@ -1,6 +1,7 @@
 Given(/^User Visit USCIS home page$/) do
   @browser.goto "http://192.168.8.105:3000/"
   @browser.window.maximize
+
 end
 
 

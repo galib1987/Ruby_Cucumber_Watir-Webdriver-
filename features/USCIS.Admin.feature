@@ -9,9 +9,9 @@ Feature: this is to test the functionality of the Admin feature of USCIS applica
     And   User Visit Admin portal from Menu
     When  User clicks on "View groupings records" to Add a new record
     And   User clicks "Create new grouping"
-    And   User insert "Tech Demo Sample 2"
+    And   User insert "Tech Demo Sample 3"
     And   User clicks on "Create Grouping"
-    Then  User Varify the "Tech Demo Sample 2" group added properly
+    Then  User Varify the "Tech Demo Sample 3" group added properly
 
 
 

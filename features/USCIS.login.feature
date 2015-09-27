@@ -1,5 +1,7 @@
 Feature: This feature will test the login functionality of USCIS Demo app
 
+
+  @smoke
   Scenario: User successfully logs in to the app with valid credentials
     Given User Visit USCIS home page
     When  User Enter Valid User ID
