@@ -1,7 +1,7 @@
 When(/^User Enter Valid User ID$/) do
-  sleep 10
+  sleep 2
   @browser.link(text:"Menu").click
-  sleep 10
+  sleep 2
   @browser.link(text:"Sign In").click
 
 

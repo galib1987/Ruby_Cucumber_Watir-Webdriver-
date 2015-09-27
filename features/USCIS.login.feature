@@ -8,9 +8,9 @@ Feature: This feature will test the login functionality of USCIS Demo app
     Then  User is able to successfully login to the applicaton
 
 
-
 ########################################################################################################
 
+  @regression
   Scenario Outline: User Unable to logs in to the app with sets of invalid credentials
     Given User Visit USCIS home page
     When  User Enter a Valid User id as <User_ID>
@@ -24,7 +24,6 @@ Feature: This feature will test the login functionality of USCIS Demo app
 
     | 234823832dcdc | password  |
     | user1         | sjcsajc   |
-    | dbdsbcdsc     | jscjsacja |
 
 
 

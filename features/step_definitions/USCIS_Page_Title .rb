@@ -1,5 +1,6 @@
 Given(/^User Visit USCIS home page$/) do
   @browser.goto "http://192.168.8.105:3000/"
+  @browser.window.maximize
 end
 
 
@@ -53,6 +54,8 @@ Then(/^User Varify the total number of buttons at home page$/) do
 end
 
 When(/^User clicks on Terms & Accessibility link at home page$/) do
+
+  sleep 2
   @browser.link(text: "Terms & Accessibility").click 
 end
 
@@ -61,7 +64,9 @@ Then(/^User successfully navigated to the destination page$/) do
    sleep 5
    text = @browser.div(text: "Accessiblity Statement").text
 
-  expect(text).to eql? "Accessibility Statement"
+   #expect().to eql? "Accessibility Statement"
+
+   expect(text).to eq("Accessibility Statement")
 
   # if text == "Accessibility Statement"
   #   puts "test passed"

@@ -14,11 +14,11 @@ After do |scenario|
     embed(scenario.name+".png", 'image/png')
   end
 
-  #@browser.quit
+  @browser.quit
 end
 
 
 After do
 
-  #@browser.quit
+  @browser.quit
 end
