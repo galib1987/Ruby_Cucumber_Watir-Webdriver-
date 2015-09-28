@@ -8,6 +8,7 @@ end
 Then(/^User Varify the Page Title$/) do
 
   sleep 3
+
   if @browser.title.present?
     puts "@browser.title"
   else

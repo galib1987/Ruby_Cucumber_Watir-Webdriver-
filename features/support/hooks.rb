@@ -3,7 +3,7 @@ Before do
   # browser = ENV['BROWSER']
   # @browser = Watir::Browser.new browser.to_sym
 
-  @browser = Watir::Browser.new :ie
+  @browser = Watir::Browser.new :firefox
 
 end
 
