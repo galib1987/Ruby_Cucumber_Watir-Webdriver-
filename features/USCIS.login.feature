@@ -8,6 +8,7 @@ Feature: This feature will test the login functionality of USCIS Demo app
     And   User Enter Valid Password
     And   User Click Sign in
     Then  User is able to successfully login to the applicaton
+    And   user sign out
 
 
 ########################################################################################################

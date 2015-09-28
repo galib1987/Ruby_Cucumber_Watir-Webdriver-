@@ -2,7 +2,7 @@ Feature: This feature is to test USCIS home page title and logo is present
 
   @smoke
   @regression
-  Scenario: Validate USCIS tile
+  Scenario: user validate USCIS tile
     Given User Visit USCIS home page
     Then  User Varify the Page Title
 
@@ -25,7 +25,7 @@ Feature: This feature is to test USCIS home page title and logo is present
 
 
 
-  Scenario: User varity Terms & Accessibility link at hoem page
+  Scenario: User varity Terms & Accessibility link at home page
     Given User Visit USCIS home page
     When  User clicks on Terms & Accessibility link at home page
     Then  User successfully navigated to the destination page
