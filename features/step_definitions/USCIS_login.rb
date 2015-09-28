@@ -5,7 +5,7 @@ When(/^User Enter Valid User ID$/) do
   @browser.link(text:"Sign In").click
 
 
-  @browser.text_field(id: "user_username").set "user5"
+  @browser.text_field(id: "user_username").set "user1"
 
 end
 
