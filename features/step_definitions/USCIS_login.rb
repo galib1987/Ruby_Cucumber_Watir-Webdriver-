@@ -1,7 +1,7 @@
 When(/^User Enter Valid User ID$/) do
-  sleep 2
+  sleep 5
   @browser.link(text:"Menu").click
-  sleep 2
+  sleep 5
   @browser.link(text:"Sign In").click
 
 
@@ -35,29 +35,29 @@ end
 
 When(/^User Enter a Valid User id as (.*)$/) do |user_id|
 
-  sleep 5
+  sleep 20
   @browser.link(text:"Menu").click
 
-  sleep 5
+  sleep 20
   @browser.link(text:"Sign In").click
 
-  sleep 5
+  sleep 10
   @browser.text_field(id:"user_username").set user_id
 
 end
 
 And(/^User Enter a Valid Password as(.*)$/) do |password|
 
-  sleep 2
+  sleep 10
   @browser.text_field(id: "user_password").set password
 end
 
 Then(/^User failed to login into the application$/) do
 
   sleep 2
-  ui_text = @browser.div(text: "Invalid username or password.").text
+  ui_text = @browser.p(text: "Invalid email or password.").text
 
-  if @browser.div(text: "Invalid username or password.").present?
+  if @browser.p(text: "Invalid email or password.").present?
     puts "Test Passed"
     sleep 2
     puts "UI Text: #{ui_text}"
