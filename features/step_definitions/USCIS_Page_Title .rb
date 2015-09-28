@@ -34,12 +34,13 @@ end
 
 
 Then(/^User Varify the total number of link at home page$/) do
+
   total_link = @browser.links.count
 
-  if total_link == 10
-    puts "test pass"
-    puts "Total Number of Link is: #{total_link}"
-  end
+  # if total_link == 10
+  #   puts "test pass"
+  #   puts "Total Number of Link is: #{total_link}"
+  # end
 end
 
 Then(/^User Varify the total number of buttons at home page$/) do
@@ -63,11 +64,11 @@ end
 Then(/^User successfully navigated to the destination page$/) do
 
    sleep 5
-   text = @browser.div(text: "Accessiblity Statement").text
+   text = @browser.div(text: "Terms & Accessiblity").text
 
    #expect().to eql? "Accessibility Statement"
 
-   expect(text).to eq("Accessibility Statement")
+   expect(text).to eq("Terms & Accessibility")
 
   # if text == "Accessibility Statement"
   #   puts "test passed"

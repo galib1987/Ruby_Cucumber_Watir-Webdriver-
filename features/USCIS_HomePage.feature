@@ -23,8 +23,8 @@ Feature: This feature is to test USCIS home page title and logo is present
 
 ####################################################################
 
-  @smoke
-  @regression
+
+
   Scenario: User varity Terms & Accessibility link at hoem page
     Given User Visit USCIS home page
     When  User clicks on Terms & Accessibility link at home page
